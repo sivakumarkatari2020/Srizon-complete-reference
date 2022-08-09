@@ -1,0 +1,12 @@
+.add-category{
+    width: 90%;
+    height: 150px;
+    padding: 0 5%;
+    margin-top: 2rem;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

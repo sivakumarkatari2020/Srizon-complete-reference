@@ -1,0 +1,316 @@
+-- Deal of the Day item's template --
+
+    <div class="product-item style-5">
+        <div class="product-inner equal-element">
+            <div class="product-top">
+                <div class="flash">
+                    <span class="onnew">
+                        <span class="text">
+                            new
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="product-thumb">
+                <div class="thumb-inner">
+                    <a href="#">
+                        <img src="assets/images/product-item-17.jpg" alt="img">
+                    </a>
+                    <div class="thumb-group">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button">
+                                <a href="#">Add to Wishlist</a>
+                            </div>
+                        </div>
+                        <a href="#" class="button quick-wiew-button">Quick View</a>
+                        <div class="loop-form-add-to-cart">
+                            <button class="single_add_to_cart_button button">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-count-down">
+                    <div class="srizon-countdown" data-y="2020" data-m="10" data-w="4" data-d="10"
+                         data-h="20" data-i="20" data-s="60"></div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h5 class="product-name product_title">
+                    <a href="#">Rolf Round</a>
+                </h5>
+                <div class="group-info">
+                    <div class="stars-rating">
+                        <div class="star-rating">
+                            <span class="star-3"></span>
+                        </div>
+                        <div class="count-star">
+                            (3)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <del>
+                            Rs.65
+                        </del>
+                        <ins>
+                            Rs.45
+                        </ins>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+-- Home slider Banner --
+
+-- Home slider templates --
+
+    <div class="slider-item style7">
+        <div class="slider-inner equal-element">
+            <div class="slider-infor">
+                <h5 class="title-small">
+                    Sale up to 40% off!
+                </h5>
+                <h3 class="title-big">
+                    Spring Summer <br/>Collection
+                </h3>
+                <div class="price">
+                    New Price:
+                    <span class="number-price">
+							Rs.270.00
+						</span>
+                </div>
+                <a href="#" class="button btn-shop-the-look bgroud-style">Shop now</a>
+            </div>
+        </div>
+    </div>
+
+-- col-lg-4 banner-wrapp templates --
+
+    <div class="banner">
+        <div class="item-banner style7">
+            <div class="inner">
+                <div class="banner-content">
+                    <h3 class="title">Pick Your <br/>Items</h3>
+                    <div class="description">
+                        Adipiscing elit curabitur senectus sem
+                    </div>
+                    <a href="#" class="button btn-lets-do-it">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+-- Banner wrapp container --
+
+-- row templates --
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="banner">
+            <div class="item-banner style4">
+                <div class="inner">
+                    <div class="banner-content">
+                        <h4 class="srizon-subtitle">TOP STAFF PICK</h4>
+                        <h3 class="title">Best Collection</h3>
+                        <div class="description">
+                            Proin interdum magna primis id consequat dictum
+                        </div>
+                        <a href="#" class="button btn-shop-now">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+-- Full width Single Big banner template --
+
+    <div class="banner">
+        <div class="item-banner style17">
+            <div class="inner">
+                <div class="banner-content">
+                    <h3 class="title">Collection Arrived</h3>
+                    <div class="description">
+                        You have no items & Are you <br/>ready to use? come & shop with us!
+                    </div>
+                    <div class="banner-price">
+                        Price from:
+                        <span class="number-price">Rs.45.00</span>
+                    </div>
+                    <a href="#" class="button btn-shop-now">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+-- Best seller product list template -- 
+
+    <li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+        <div class="product-inner equal-element">
+            <div class="product-top">
+                <div class="flash">
+						<span class="onnew">
+							<span class="text">
+								new
+							</span>
+						</span>
+                </div>
+            </div>
+            <div class="product-thumb">
+                <div class="thumb-inner">
+                    <a href="#">
+                        <img src="assets/images/product-item-1.jpg" alt="img">
+                    </a>
+                    <div class="thumb-group">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button">
+                                <a href="#">Add to Wishlist</a>
+                            </div>
+                        </div>
+                        <a href="#" class="button quick-wiew-button">Quick View</a>
+                        <div class="loop-form-add-to-cart">
+                            <button class="single_add_to_cart_button button">Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h5 class="product-name product_title">
+                    <a href="#">Blow Planter</a>
+                </h5>
+                <div class="group-info">
+                    <div class="stars-rating">
+                        <div class="star-rating">
+                            <span class="star-3"></span>
+                        </div>
+                        <div class="count-star">
+                            (3)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <del>
+                            Rs.65
+                        </del>
+                        <ins>
+                            Rs.45
+                        </ins>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+-- New Arrivals product list template -- 
+
+    <li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+        <div class="product-inner equal-element">
+            <div class="product-top">
+                <div class="flash">
+						<span class="onnew">
+							<span class="text">
+								new
+							</span>
+						</span>
+                </div>
+            </div>
+            <div class="product-thumb">
+                <div class="thumb-inner">
+                    <a href="#">
+                        <img src="assets/images/product-item-9.jpg" alt="img">
+                    </a>
+                    <div class="thumb-group">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button">
+                                <a href="#">Add to Wishlist</a>
+                            </div>
+                        </div>
+                        <a href="#" class="button quick-wiew-button">Quick View</a>
+                        <div class="loop-form-add-to-cart">
+                            <button class="single_add_to_cart_button button">Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h5 class="product-name product_title">
+                    <a href="#">Ibiza Chair</a>
+                </h5>
+                <div class="group-info">
+                    <div class="stars-rating">
+                        <div class="star-rating">
+                            <span class="star-3"></span>
+                        </div>
+                        <div class="count-star">
+                            (3)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <del>
+                            Rs.65
+                        </del>
+                        <ins>
+                            Rs.45
+                        </ins>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+-- Top Rated product list template --
+
+    <li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+        <div class="product-inner equal-element">
+            <div class="product-top">
+                <div class="flash">
+						<span class="onnew">
+							<span class="text">
+								new
+							</span>
+						</span>
+                </div>
+            </div>
+            <div class="product-thumb">
+                <div class="thumb-inner">
+                    <a href="#">
+                        <img src="assets/images/product-item-10.jpg" alt="img">
+                    </a>
+                    <div class="thumb-group">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button">
+                                <a href="#">Add to Wishlist</a>
+                            </div>
+                        </div>
+                        <a href="#" class="button quick-wiew-button">Quick View</a>
+                        <div class="loop-form-add-to-cart">
+                            <button class="single_add_to_cart_button button">Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h5 class="product-name product_title">
+                    <a href="#">File Cabinet</a>
+                </h5>
+                <div class="group-info">
+                    <div class="stars-rating">
+                        <div class="star-rating">
+                            <span class="star-3"></span>
+                        </div>
+                        <div class="count-star">
+                            (3)
+                        </div>
+                    </div>
+                    <div class="price">
+                        <del>
+                            Rs.65
+                        </del>
+                        <ins>
+                            Rs.45
+                        </ins>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>srizon - Details Fullwith</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/carousel-effect.css" />
+
+    <!-- Axios cdn -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Toastr CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/chosen.min.css">
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="details-page">
+<!--Mobile Menu Collapsable sidemenu-->
+<div class="srizon-menu-clone-wrap">
+    <div class="srizon-menu-panels-actions-wrap">
+        <span class="srizon-menu-current-panel-title">MENU</span>
+        <a class="srizon-menu-close-btn srizon-menu-close-panels" href="#">x</a>
+    </div>
+    <div class="srizon-menu-panels">
+        <div id="srizon-menu-panel-main" class="srizon-menu-panel srizon-menu-panel-main">
+            <ul class="depth-01" id="dropDownMenu1">
+                <!-- Vertical Drop Down menu comes here dynamically -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header class="header style7">
+
+    <!-- Header : logo , cart , profile , wishlist , searchBar -->
+    <div class="container">
+        <div class="main-header">
+            <div class="row">
+
+                <!-- Logo static -->
+                <div class="col-lg-3 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Search bar (dynamic functionality) -->
+                <div class="col-lg-7 col-sm-8 col-md-6 col-xs-5 col-ts-12">
+                    <div class="block-search-block">
+                        <form class="form-search form-search-width-category">
+                            <div class="form-content" onclick="openSearchBox()">
+                                <div class="inner">
+                                    <div class="input">
+                                        <p style="margin: 0;">Search here...</p>
+                                    </div>
+                                </div>
+                                <button class="btn-search" type="submit">
+                                    <span class="icon-search"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12">
+                    <div class="header-control">
+
+                        <!-- Wishlist/Favorites Page -->
+                        <div class="block-account block-header srizon-dropdown">
+                            <a href="wishlist.html">
+                                <span class="fa fa-heart"></span>
+                            </a>
+                        </div>
+
+                        <!-- Cart Page -->
+                        <div class="block-minicart srizon-mini-cart block-header srizon-dropdown">
+                            <a href="shoppingcart.html" class="shopcart-icon">
+                                Cart
+                            </a>
+                        </div>
+
+                        <!-- Profile/Login Page -->
+                        <div class="block-account block-header srizon-dropdown" id="profileUser">
+                            <a href="javascript:void(0);">
+                                <span class="flaticon-user"></span>
+                            </a>
+                        </div>
+
+                        <!-- Hamburger Icon / Mobile Navigation Icon -->
+                        <a class="menu-bar mobile-navigation menu-toggle" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Navigation Header -->
+    <div class="header-nav-container rows-space-20">
+        <div class="container">
+            <div class="header-nav-wapper main-menu-wapper">
+                <div class="vertical-wapper block-nav-categori">
+
+                    <!-- Hamburger Icon to Open list of categories -->
+                    <div class="block-title">
+                            <span class="icon-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        <span class="text">All Categories</span>
+                    </div>
+
+                    <!-- Vertical slidedown menu -->
+                    <div class="block-content verticalmenu-content">
+                        <ul class="srizon-nav-vertical vertical-menu srizon-clone-mobile-menu" id="dropDownMenu">
+
+                            <!-- Vertical Drop Down menu comes here dynamically -->
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Header nav for big screens -->
+                <div class="header-nav">
+                    <div class="container-wapper">
+                        <ul class="srizon-nav main-menu " id="menu-main-menu">
+
+                            <!-- Main menu comes here dynamically -->
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Header for mobile -->
+<div class="header-device-mobile">
+    <div class="wapper">
+        <div class="item mobile-logo">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="img">
+                </a>
+            </div>
+        </div>
+        <div class="item item mobile-search-box has-sub">
+            <div onclick="openSearchBox()">
+				<span class="icon">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+            </div>
+        </div>
+        
+        <div class="item menu-bar">
+            <a class=" mobile-navigation  menu-toggle" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Full page search box -->
+<div class="search-box full-page" id="full-page-search-box">
+    <!-- Search box -->
+    <div class="inner-search-box">
+        <div class="back-nav" onclick="closeSearchBox()">
+            <span class="icon" style="font-size: 25px;">
+                <i class="fas fa-close" aria-hidden="true"></i>
+            </span>
+        </div>
+        <form class="form-search">
+            <div class="form-content">
+                <div class="inner-full">
+                    <input type="text" id="full-search-input" class="input" name="squery" value="" placeholder="Search here" autocomplete="off">
+                </div>
+                <button class="btn-search" id="full-search-btn" type="submit">
+                    Search
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- Suggestions based on various categories -->
+    <div class="inner-suggestion-list">
+        <div class="category-navigation-list">
+            <h4>Categories</h4>
+            <div class="nav-list" id="categoryList">
+                <!-- Category list comes here dynamically -->
+            </div>
+        </div>
+        <div class="category-navigation-list">
+            <h4>Latest Products</h4>
+            <div class="nav-list" id="latestProductsList">
+                <!-- Latest 10 products comes here dynamically -->
+            </div>
+        </div>
+        <div class="category-navigation-list">
+            <h4>Highly Rated</h4>
+            <div class="nav-list" id="topRatedProductsList">
+                <!-- Top 10 rated products list comes here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main body : product details,images,description,suggestions -->
+<div class="main-content main-content-details single no-sidebar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Path Navigator -->
+                <div class="breadcrumb-trail breadcrumbs">
+                    <ul class="trail-items breadcrumb">
+                        <li class="trail-item trail-begin">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="trail-item" id="navProductHome">
+                            <!-- Product home page name comes here dynamically -->
+                            <a href="#">Products</a>
+                        </li>
+                        <li class="trail-item trail-end active" id="navProduct">
+                            product
+                            <!-- Product name comes here dynamically -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content-area content-details full-width col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                <div class="site-main">
+                    <div class="details-product" id="detailsProduct">
+                        <!-- product details will comes here dynamically -->
+                        <!-- Loader Indication -->
+							<div class="loader">
+								<div class="inner-loader">
+								</div>
+							</div>
+                    </div>
+
+                    <div class="tab-details-product">
+                        <ul class="tab-link">
+                            <li class="active">
+                                <a data-toggle="tab" aria-expanded="true" href="#product-descriptions">Descriptions </a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" aria-expanded="true" href="#information">Information </a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" aria-expanded="true" href="#reviews">Reviews</a>
+                            </li>
+                        </ul>
+                        <div class="tab-container">
+                            <div id="product-descriptions" class="tab-panel active">
+                                <!-- The description will come here dynamically -->
+                            </div>
+                            <div id="information" class="tab-panel">
+                                <!-- The information table come here dynamically -->
+                            </div>
+                            <div id="reviews" class="tab-panel">
+                                <div class="reviews-tab">
+                                    <div class="comments" id="reviewsTemplate">
+                                        <!-- user reviews come here dynamically -->
+                                        
+                                        <!-- Loader Indication -->
+							            <div class="loader">
+							            	<div class="inner-loader level3">
+							            	</div>
+							            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="clear: left;"></div>
+                    <div class="related products product-grid">
+                        <h2 class="product-grid-title">You may also like</h2>
+                        <div class="equal-container nav-center" id="suggestionProducts" style="display: flex;flex-wrap: wrap;align-items: center;justify-content: space-around;">
+
+                            <!-- products will come here dynamically -->
+                            
+                            <!-- Loader Indication -->
+							<div class="loader">
+								<div class="inner-loader level2">
+								</div>
+							</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer with links and email news-letter subscription -->
+<footer class="footer style7">
+    <div class="container">
+        <div class="container-wapper">
+            <div class="row">
+
+                <div class="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-sm hidden-md hidden-lg">
+                    <!-- News letter template -->
+                    <div class="srizon-newsletter style1">
+                        <div class="newsletter-head">
+                            <h3 class="title">Newsletter</h3>
+                        </div>
+                        <div class="newsletter-form-wrap">
+                            <div class="list">
+                                Sign up for our free video course and <br/> urban garden inspiration
+                            </div>
+                            <input type="email" class="input-text email email-newsletter" placeholder="Your email letter">
+                            <button class="button btn-submit submit-newsletter">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="srizon-custommenu default">
+                        <h2 class="widgettitle">Quick Menu</h2>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#">New arrivals</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Life style</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Accents</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Tables</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Dining</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs">
+                    <div class="srizon-newsletter style1">
+                        <div class="newsletter-head">
+                            <h3 class="title">Newsletter</h3>
+                        </div>
+                        <div class="newsletter-form-wrap">
+                            <div class="list">
+                                Sign up for our free video course and <br/> urban garden inspiration
+                            </div>
+                            <input type="email" class="input-text email email-newsletter"
+                                   placeholder="Your email letter">
+                            <button class="button btn-submit submit-newsletter">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="srizon-custommenu default">
+                        <h2 class="widgettitle">Information</h2>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#">FAQs</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Track Order</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Delivery</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Return</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Horizontal info -->
+            <div class="footer-end">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="srizon-socials">
+                            <ul class="socials">
+                                <li>
+                                    <a href="#" class="social-item" target="_blank">
+                                        <i class="icon fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-item" target="_blank">
+                                        <i class="icon fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-item" target="_blank">
+                                        <i class="icon fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="coppyright">
+                            Copyright © 2020
+                            <a href="#">srizon</a>
+                            . All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+<!-- Footer for mobile devices -->
+<div class="footer-device-mobile">
+    <div class="wapper">
+        <div class="footer-device-mobile-item device-home">
+            <a href="index.html">
+					<span class="icon">
+						<i class="fa fa-home" aria-hidden="true"></i>
+					</span>
+                Home
+            </a>
+        </div>
+        <div class="footer-device-mobile-item device-home device-wishlist">
+            <a href="wishlist.html">
+					<span class="icon">
+						<i class="fa fa-heart" aria-hidden="true"></i>
+					</span>
+                Wishlist
+            </a>
+        </div>
+        <div class="footer-device-mobile-item device-home device-cart">
+            <a href="shoppingcart.html">
+					<span class="icon">
+						<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+					</span>
+                <span class="text">Cart</span>
+            </a>
+        </div>
+        <div class="footer-device-mobile-item device-home device-user" id="profileUser">
+            <a href="profile.html">
+					<span class="icon">
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</span>
+                Account
+            </a>
+        </div>
+    </div>
+</div>
+<a href="#" class="backtotop">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<!-- JavaScript templates for product details page-->
+<script type="module" src="assets/js/templates/home/category-list-nav.js"></script>
+<script type="module" src="assets/js/templates/products/product-page.js"></script>
+
+<!-- Scripts for login check -->
+<script type="module" src="assets/js/templates/login/checkLogin.js"></script>
+
+<!-- Scripts to add the functionality to search box -->
+<script type="module" src="assets/js/templates/searchPage/suggestion-list.js"></script>
+<script type="module" src="assets/js/templates/searchPage/searchItem.js"></script>
+<!-- Script to open the search box -->
+<script>
+    function openSearchBox(){
+        document.getElementById('full-page-search-box').style.display = 'block';
+        document.getElementById('full-page-search-box').style.position = 'fixed';
+    }
+    function closeSearchBox(){
+        document.getElementById('full-page-search-box').style.display = 'none';
+        document.getElementById('full-search-input').value = '';
+        document.getElementById('full-search-btn').style.pointerEvents = 'none';
+        document.getElementById('full-search-btn').style.backgroundColor = '#c6c6c6';
+    }
+</script>
+<!-- Swiper CDN -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script defer type="module" src="assets/js/templates/home/home-sliders.js"></script>
+
+<script>
+    //  Initialize Swiper
+    let swiper = new Swiper(".mySwiper", {
+        autoplay: {
+            delay: 2000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        observer: true,
+        observerParents: true
+    }); 
+</script>
+
+<script>
+    async function addToWishlist(product_id,user_id,quantity){
+        if(user_id === 0){
+            window.location.href = "./login.html";
+        } else {
+            try{
+                const result = await axios.post('https://srizon-proj.el.r.appspot.com/api/client/addToWishlist',{product_id,user_id,quantity})
+                .then(response => response)
+                .catch(err => console.log(err))
+
+                toastr.options = {
+                    "closeButton": true,
+                    "debug": false,
+                    "newestOnTop": true,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+
+                if(result.data?.status !== 200){
+                    toastr.error('Unable to add item to your wishlist!! Try later');
+                }else{
+                    toastr.success('Added to your wishlist!');
+                }
+            } catch (err) {
+				console.log(err);
+				toastr.error('Unable to add item to your wishlist!! Try later');
+			}
+        }
+    }
+
+    async function addToCart(product_id,user_id){
+        if(user_id === 0){
+            window.location.href = "./login.html";
+        }else{
+            try{
+                const result = await axios.post('https://srizon-proj.el.r.appspot.com/api/client/addToCart',{product_id,user_id})
+                .then(response => response)
+                .catch(err => console.log(err))
+
+                toastr.options = {
+                    "closeButton": true,
+                    "debug": false,
+                    "newestOnTop": true,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+            
+                if(result.data?.status !== 200){
+                    toastr.error('Unable to add item to your cart!!Try later');
+                }else{
+                    toastr.success('Added to your cart!');
+                }
+            } catch (err) {
+                console.log(err);
+                toastr.error('Unable to add item to your cart!!Try later');
+            }
+        }
+    }
+
+</script>
+
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<script src="assets/js/jquery.plugin-countdown.min.js"></script>
+<script src="assets/js/jquery-countdown.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/magnific-popup.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/jquery.scrollbar.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/mobile-menu.js"></script>
+<script src="assets/js/chosen.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/jquery.elevateZoom.min.js"></script>
+<script src="assets/js/jquery.actual.min.js"></script>
+<script src="assets/js/fancybox/source/jquery.fancybox.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<script src="assets/js/owl.thumbs.min.js"></script>
+<script src="assets/js/jquery.scrollbar.min.js"></script>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
+<script src="assets/js/frontend-plugin.js"></script>
+</body>
+
+<!-- Mirrored from aitechnologies.co.in/html/srizon/productdetails-fullwidth.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jan 2022 06:47:14 GMT -->
+</html>

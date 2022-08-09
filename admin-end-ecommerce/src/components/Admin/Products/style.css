@@ -1,0 +1,136 @@
+.edit-form{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.form{
+    width: 95%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #d6bc8f;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.form-1 .img-box{
+    width: 50%;
+    max-width: 400px;
+    height: 400px;
+}
+.img-box img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.img-box .but-remove{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    background-color: #caa971;
+    cursor: pointer;
+}
+.form .form-content{
+    width: 50%;
+    height: 100%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.form-content.row{
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.form-content .form-field{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-content.row .form-field.row{
+    width: 100%;
+    margin-left: 2rem;
+    box-sizing: border-box;
+}
+.form-field label{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #74726b;
+}
+.form-field label span{
+    font-size: 0.7rem;
+}
+.form-field .field-input{
+    width: 95%;
+    padding: 1rem 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #fefde5;
+    font-size: 1.2rem;
+}
+.form-field .field-input.large{
+    width: 100%;
+    height: 150px;
+    text-align: start;
+}
+.form-field .field-input.select{
+    width: 100%;
+}
+.form-field .field-input.textarea{
+    width: 100%;
+    height: 100px;
+}
+.form-field .field-input.read-only{
+    background-color: #caa971;
+}
+.form-field.row .field-input.row{
+    width: 90%;
+}
+@media (max-width:500px){
+    .form-1{
+        width: 95%;
+        flex-direction: column;
+    }
+    .form-1 .img-box{
+        width: 100%;
+        height: 400px;
+    }    
+    .form .form-content{
+        width: 100%;
+        align-items: center;
+    }    
+    .form-content.row{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }    
+    .form-content .form-field{
+        width: 90%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+    }    
+    .form-content.row .form-field.row{
+        width: 90%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }    
+    .form-field .field-input.large{
+        width: 95%;
+        height: 150px;
+    }    
+    .form-field .field-input.select{
+        width: 100%;
+    }    
+}

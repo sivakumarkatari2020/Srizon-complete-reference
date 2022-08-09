@@ -1,0 +1,167 @@
+.container{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.container > h1{
+    margin-bottom: 2rem;
+}
+.inner-container{
+    width: 100%;
+    height: auto;
+    border: none;
+}
+.inner-container thead{
+    background-color: #d6bc8f;
+    border: none;
+}
+thead tr th{
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+    margin: 0;
+    border: none;
+    text-align: left;
+}
+.inner-container tbody{
+    border: none;
+}
+tbody tr td{
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(252, 249, 242);
+}
+.button-box{
+    max-width: 200px;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-box.large{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.button-box .button{
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+.button-box .button.large{
+    margin-left: 1rem;
+}
+.button-box .button span{
+    display: none;
+}
+.button-box .button p{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.button-box .red-but{
+    width: 45%;
+    max-width: 150px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: red;
+    background-color: inherit;
+    border: 3px solid red;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.button-box .green-but{
+    width: 45%;
+    max-width: 150px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: green;
+    border: 3px solid green;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.button-box .blue-but{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.category-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.but-add{
+    width: 100px;
+    padding: 1rem 0.5rem;
+    color: #fff;
+    background-color: #74726b;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+.but-add:hover{
+    background-color: #0e0f0f;
+}
+@media (max-width : 800px){
+    .container{
+        max-width: 100vw;
+        overflow-x: scroll;    
+    }
+    .button-box .button span{
+        display: block;
+    }    
+    .button-box .button p{
+        display: none;
+    }
+}
+
+.badge-green{
+    max-width: 150px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 500;
+
+    background-color: rgb(184, 247, 184);
+    color: rgb(2, 111, 2);
+    padding: 0.2rem 0;
+}
+.badge-red{
+    max-width: 150px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 500;
+
+    background-color: rgb(253, 141, 141);
+    color: rgb(148, 6, 6);
+    padding: 0.2rem 0;
+}
+.badge-orange{
+    max-width: 150px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 500;
+
+    background-color: rgb(247, 197, 103);
+    color: rgb(181, 119, 5);
+    padding: 0.2rem 0;
+}
+.badge-small{
+    max-width: 100px;
+}

@@ -1,0 +1,70 @@
+-- shopping-cart items template -- 
+
+    <tr class="cart_item">
+        <td class="product-remove">
+            <a href="#" class="remove"></a>
+        </td>
+        <td class="product-thumbnail">
+            <a href="#">
+                <img src="assets/images/cart-item-2.jpg" alt="img"
+                    class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image">
+            </a>
+        </td>
+        <td class="product-name" data-title="Product">
+            <a href="#" class="title">Mini swing dress</a>
+            <span class="attributes-select attributes-color">Black,</span>
+            <span class="attributes-select attributes-size">XXL</span>
+        </td>
+        <td class="product-quantity" data-title="Quantity">
+            <div class="quantity">
+                <div class="control">
+                    <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                    <input type="text" data-step="1" data-min="0" value="1" title="Qty"
+                           class="input-qty qty" size="4">
+                    <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                </div>
+            </div>
+        </td>
+        <td class="product-price" data-title="Price">
+    		<span class="woocommerce-Price-amount amount">
+    			<span class="woocommerce-Price-currencySymbol">
+    				Rs.
+    			</span>
+    			45
+    		</span>
+        </td>
+    </tr>
+
+
+-- shopping-cart bottom summation tab template --
+
+    <tr>
+        <td class="actions">
+            <!--
+            <div class="coupon">
+                <label class="coupon_code">Coupon Code:</label>
+                <input type="text" class="input-text" placeholder="Promotion code here">
+                <a href="#" class="button"></a>
+            </div>
+            -->
+            <div class="order-total">
+						<span class="title">
+							Total Price:
+						</span>
+                <span class="total-price">
+							Rs.95
+						</span>
+            </div>
+        </td>
+    </tr>
+
+-- bottom control part of shopping cart --
+
+    <div class="control-cart">
+        <button class="button btn-continue-shopping">
+            Continue Shopping
+        </button>
+        <button class="button btn-cart-to-checkout">
+            Checkout
+        </button>
+    </div>
